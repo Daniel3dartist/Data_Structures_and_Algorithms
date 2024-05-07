@@ -14,14 +14,14 @@ public class SelectionSort {
         return arr;
     }
     public static void main(String[] arr){
-        int[] arr_01 = {11, 30, -1, 2, 7, 12, 13, 20, 8};
+        int[] _arr = {11, 30, -1, 2, 7, 12, 13, 20, 8};
         System.out.print("\nBefore sort: ");
-        for (int i:arr_01){
+        for (int i:_arr){
             System.out.print(i+" ");
         }
         
         System.out.print("\nAfter Sort: ");
-        int[] sorted_arr = selectionSort(arr_01);
+        int[] sorted_arr = selectionSort(_arr);
         for (int i:sorted_arr){
             System.out.print(i+" ");
         }
