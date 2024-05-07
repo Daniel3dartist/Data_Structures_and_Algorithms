@@ -1,7 +1,5 @@
 # Python
 __pycache__/
-*.py[cod]
-*$py.class
 
 # C++
 
@@ -9,3 +7,4 @@ __pycache__/
 # C#
 
 # Java
+.idea
