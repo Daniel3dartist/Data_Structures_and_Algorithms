@@ -1,2 +1,2 @@
-# Data_Structures_and_Algorithms
+# Data Structures and Algorithms
 Examples of Data Structures and Algorithms
