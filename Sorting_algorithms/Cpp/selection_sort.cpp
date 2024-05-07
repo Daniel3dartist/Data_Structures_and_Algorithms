@@ -2,15 +2,47 @@
 
 using namespace std;
 
-
-void selectionsort()
+void selectionSort(int arr[], int arr_lenght)
 {
-    cout << "Selection Sort" << endl;
+    
+    for (int i = 0; i < arr_lenght - 1; i++)
+    {
+        int lowest_index = i;
+        for (int j = i + 1; j < arr_lenght; j++)
+        {
+            if (arr[j] < arr[lowest_index])
+            {
+                lowest_index = j;
+            }
+        }
+        if (lowest_index != i)
+        {
+            swap(arr[lowest_index], arr[i]);
+        }
+    } 
 }
+
+void coutArray(int arr[], int arr_lenght)
+{
+    for (int i = 0; i < arr_lenght; i++)
+    {
+        cout << arr[i] << " ";
+    }
+}
+
 
 int main()
 {
+    int arr[] = {11, 30, -1, 2, 7, 12, 13, 20, 8};
+    int arr_lenght = sizeof(arr) / sizeof(arr[0]);
     
-    selectionsort();
+    cout << endl;
+    cout << "Before sort: ";
+    coutArray(arr, arr_lenght);
+    cout << endl;
+    selectionSort(arr, arr_lenght);
+    cout << "After sort: ";
+    coutArray(arr, arr_lenght);
+    cout << "\n " << endl;
     return 0;
 }
