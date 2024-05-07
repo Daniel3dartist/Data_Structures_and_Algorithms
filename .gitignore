@@ -1,5 +1,8 @@
-#VScode
+# VScode
 .vscode
+
+# IntelliJ
+.idea
 
 # Python
 __pycache__/
@@ -7,8 +10,9 @@ __pycache__/
 # C++
 output
 
-
 # C#
 
 # Java
-.idea
+
+# Kotlin
+out
