@@ -10,6 +10,6 @@ def selection_sort(arr:list):
     return arr
 
 if __name__ == "__main__":
-    arr = [11, 30, -1, 2,7, 12, 13, 20, 8]
+    arr = [11, 30, -1, 2, 7, 12, 13, 20, 8]
     print(f"Before Sort: {arr}")
     print(f"After Sort: {selection_sort(arr=arr)}")
