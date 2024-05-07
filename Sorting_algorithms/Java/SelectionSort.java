@@ -13,18 +13,20 @@ public class SelectionSort {
         }
         return arr;
     }
+
+    public static void printArr(int[] arr){
+        for (int i:arr){
+            System.out.print(i+" ");
+        }
+    }
+
     public static void main(String[] arr){
         int[] _arr = {11, 30, -1, 2, 7, 12, 13, 20, 8};
         System.out.print("\nBefore sort: ");
-        for (int i:_arr){
-            System.out.print(i+" ");
-        }
-        
+        printArr(_arr);
         System.out.print("\nAfter Sort: ");
         int[] sorted_arr = selectionSort(_arr);
-        for (int i:sorted_arr){
-            System.out.print(i+" ");
-        }
+        printArr(sorted_arr);
         System.out.print("\n ");
     }
 }

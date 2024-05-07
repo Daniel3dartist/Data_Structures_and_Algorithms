@@ -11,6 +11,12 @@ __pycache__/
 output
 
 # C#
+CSharp
+.vs
+obj
+bin
+*.csproj
+*.sln
 
 # Java
 

@@ -43,6 +43,6 @@ int main()
     selectionSort(arr, arr_lenght);
     cout << "After sort: ";
     coutArray(arr, arr_lenght);
-    cout << "\n " << endl;
+    cout << "\n ";
     return 0;
 }
