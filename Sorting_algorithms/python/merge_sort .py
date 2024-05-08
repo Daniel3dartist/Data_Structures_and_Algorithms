@@ -1,4 +1,4 @@
-def arr_sort_agent(left_arr:list, right_arr:list):
+def arr_merge_agent(left_arr:list, right_arr:list):
     ord_arr = []
     left_idx, right_idx = 0,0
     while left_idx < len(left_arr) and right_idx < len(right_arr):
