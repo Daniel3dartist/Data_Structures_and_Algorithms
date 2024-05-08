@@ -19,7 +19,7 @@ def merge_sort(arr:list):
         cut_point = len(arr)//2
         left = merge_sort(arr[:cut_point])
         right = merge_sort(arr[cut_point:])
-        return arr_sort_agent(left, right)
+        return arr_merge_agent(left, right)
 
 
 if __name__ == "__main__":
