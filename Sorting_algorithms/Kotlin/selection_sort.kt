@@ -9,17 +9,15 @@ fun selection_sort (arr: IntArray) {
                 lowest_index = j
             }
         }
-        val temp_var = arr[lowest_index]
+        val lowest_num = arr[lowest_index]
         arr[lowest_index] = arr[i]
-        arr[i] = temp_var
+        arr[i] = lowest_num
     }
 }
 
 fun main () {
     val arrList = intArrayOf(11, 30, -1, 2, 7, 12, 13, 20, 8)
-    println()
-    println("Before Sort: ${arrList.joinToString(", ")}")
+    println("\nBefore Sort: ${arrList.joinToString(", ")}")
     selection_sort(arrList)
-    println("After Sort: ${arrList.joinToString(", ")}")
-    println()
+    println("After Sort: ${arrList.joinToString(", ")}\n")
 }
