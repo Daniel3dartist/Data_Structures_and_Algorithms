@@ -12,8 +12,8 @@ fun arr_merge_agent(left_arr: IntArray, right_arr: IntArray): IntArray {
             right_idx++
         }
     }
-    ord_arr.addAll(left_arr.toList().toMutableList().subList(left_idx, left_arr.size))
-    ord_arr.addAll(right_arr.toList().toMutableList().subList(right_idx, left_arr.size))
+    ord_arr.addAll(left_arr.toList().subList(left_idx, left_arr.size))
+    ord_arr.addAll(right_arr.toList().subList(right_idx, left_arr.size))
     return ord_arr.toList().toIntArray()
 }
 
