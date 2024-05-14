@@ -17,12 +17,13 @@ void bubbleSort(int arr[], int arr_lenght)
 }
 
 
-void coutArray(int arr[], int arr_lenght)
+void printArray(int arr[], int arr_lenght)
 {
     for (int i = 0; i < arr_lenght; i++)
     {
         cout << arr[i] << " ";
     }
+    cout << endl;
 }
 
 int main()
@@ -31,11 +32,10 @@ int main()
     int arr_lenght = sizeof(arr) / sizeof(arr[0]);
     cout << endl;
     cout << "Before sort: ";
-    coutArray(arr, arr_lenght);
-    cout << endl;
+    printArray(arr, arr_lenght);
     bubbleSort(arr, arr_lenght);
     cout << "After sort: ";
-    coutArray(arr, arr_lenght);
+    printArray(arr, arr_lenght);
     cout << "\n ";
     return 0;
 }

@@ -19,7 +19,7 @@ void insertionSort(int arr[], int arr_lenght)
 
 
 
-void coutArray(int arr[], int arr_lenght)
+void printArray(int arr[], int arr_lenght)
 {
     for (int i = 0; i < arr_lenght; i++)
     {
@@ -36,10 +36,10 @@ int main()
     
     cout << endl;
     cout << "Before sort: ";
-    coutArray(arr, arr_lenght);
+    printArray(arr, arr_lenght);
     insertionSort(arr, arr_lenght);
     cout << "After sort: ";
-    coutArray(arr, arr_lenght);
+    printArray(arr, arr_lenght);
     cout << " ";
     return 0;
 }

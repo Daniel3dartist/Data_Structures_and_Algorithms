@@ -22,12 +22,13 @@ void selectionSort(int arr[], int arr_lenght)
     } 
 }
 
-void coutArray(int arr[], int arr_lenght)
+void printArray(int arr[], int arr_lenght)
 {
     for (int i = 0; i < arr_lenght; i++)
     {
         cout << arr[i] << " ";
     }
+    cout << endl;
 }
 
 
@@ -38,11 +39,10 @@ int main()
     
     cout << endl;
     cout << "Before sort: ";
-    coutArray(arr, arr_lenght);
-    cout << endl;
+    printArray(arr, arr_lenght);
     selectionSort(arr, arr_lenght);
     cout << "After sort: ";
-    coutArray(arr, arr_lenght);
+    printArray(arr, arr_lenght);
     cout << "\n ";
     return 0;
 }
