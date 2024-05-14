@@ -10,15 +10,11 @@ int partition(int arr[], int lowest_index, int highest_index)
     for (int i = lowest_index; i < highest_index; i++){
         if (arr[i] <= pivot)
         {
-            int tempVar = arr[leftIndex];
-            arr[leftIndex] = arr[i];
-            arr[i] = tempVar;
+            swap(arr[i], arr[leftIndex]);
             leftIndex++;
         }
     }
-    int tempVar = arr[leftIndex];
-    arr[leftIndex] = arr[highest_index];
-    arr[highest_index] = tempVar;
+    swap(arr[highest_index], arr[leftIndex]);
     return leftIndex;
 }
 
@@ -33,12 +29,13 @@ void quickSort(int arr[], int lowest_index, int highest_index)
     }
 }
 
-void coutArray(int arr[], int arr_lenght)
+void printArray(int arr[], int arr_lenght)
 {
     for (int i = 0; i < arr_lenght; i++)
     {
         cout << arr[i] << " ";
     }
+    cout << endl;
 }
 
 
@@ -49,11 +46,10 @@ int main()
     
     cout << endl;
     cout << "Before sort: ";
-    coutArray(arr, arr_lenght);
-    cout << endl;
+    printArray(arr, arr_lenght);
     quickSort(arr, 0, arr_lenght-1);
     cout << "After sort: ";
-    coutArray(arr, arr_lenght);
+    printArray(arr, arr_lenght);
     cout << "\n ";
     return 0;
 }
