@@ -1,5 +1,8 @@
 # Sorting Algorithms
 
+## What is a sorting algorithm
+A sorting algorithm is a method used to arrange a list of elements into a particular order, typically ascending or descending. There are various sorting algorithms, each with its own approach and efficiency. Some popular sorting algorithms include:
+
 ## Selection Sort
 - [Python](https://github.com/Daniel3dartist/Data_Structures_and_Algorithms/blob/main/Sorting_algorithms/python/src/selection_sort.py)
 - [Kotlin](https://github.com/Daniel3dartist/Data_Structures_and_Algorithms/blob/main/Sorting_algorithms/Kotlin/src/selection_sort.kt) 
@@ -27,5 +30,5 @@
 ## Merge Sort
 - [Python](https://github.com/Daniel3dartist/Data_Structures_and_Algorithms/blob/main/Sorting_algorithms/python/src/merge_sort.py)
 - [Kotlin](https://github.com/Daniel3dartist/Data_Structures_and_Algorithms/blob/main/Sorting_algorithms/Kotlin/src/merge_sort.kt) 
-- [Java](https://github.com/Daniel3dartist/Data_Structures_and_Algorithms/blob/main/Sorting_algorithms/Java/src/MergeSort.java)
+- [Java](https://github.com/Daniel3dartist/Data_Structures_and_Algorithms/blob/main/Sorting_algorithms/Java/src/MergeSort.Java)
 - [C++](https://github.com/Daniel3dartist/Data_Structures_and_Algorithms/blob/main/Sorting_algorithms/Cpp/src/Merge_sort.cpp)
